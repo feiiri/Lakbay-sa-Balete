@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LakBAyLETE | Tourist Spots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f6f9f6;
+      color: #1b3a26;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(rgba(27,58,38,0.4), rgba(27,58,38,0.4)),
+                  url('https://wanderera.com/wp-content/uploads/2018/07/Orchard-1.jpg') center/cover no-repeat;
+      height: 30vh; color: white; display: flex; justify-content: center; align-items: center; text-align: center;
+      letter-spacing:2px;
+    }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    }
+    nav {
+      background-color: #1b3a26;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    nav a:hover {color: #cde0cd;}
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: #0f2617;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Horizontal scroll container */
+    .cards-container-horizontal {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+    .cards-container-horizontal::-webkit-scrollbar {
+      height: 10px;
+    }
+    .cards-container-horizontal::-webkit-scrollbar-thumb {
+      background-color: rgba(27, 58, 38, 0.5);
+      border-radius: 5px;
+    }
+    .cards-container-horizontal::-webkit-scrollbar-track {
+      background-color: #f6f9f6;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      overflow: hidden;
+      text-align: left;
+      flex-shrink: 0; /* Important for horizontal scrolling */
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      font-size: 1.4em;
+      margin: 0 0 10px 0;
+      color: #1b3a26;
+    }
+    .card-content p {
+      font-size: 1em;
+      line-height: 1.5;
+      color: #1b3a26;
+      text-align: justify;
+    }
+
+    footer {background-color: #1b3a26; color: white; text-align: center; padding: 15px; font-weight: 700;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>#LakBAyLETE <br> Explore the Natural Beauty of Balete, Batangas</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="spots.html">Tourist Spots</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Explore Tourist Spots</h2>
+    <p>
+      Nestled beside the calm waters of Taal Lake, Balete is a peaceful haven rich in natural beauty, culture, and heartfelt hospitality. Whether you’re looking for a refreshing escape, a spiritual journey, or a place to unwind with breathtaking scenery, Balete offers an unforgettable experience for every visitor.
+    </p>
+
+    <div class="cards-container-horizontal">
+      <!-- Marian Orchard Pilgrimage Center -->
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/2f386e_ffcea0e641af42f1aa6367921488ac1d~mv2_d_2048_1365_s_2.jpg/v1/fit/w_2500,h_1330,al_c/2f386e_ffcea0e641af42f1aa6367921488ac1d~mv2_d_2048_1365_s_2.jpg" alt="Marian Orchard Pilgrimage Center">
+        <div class="card-content">
+          <h3>Marian Orchard Pilgrimage Center</h3>
+          <p>The Marian Orchard is a pilgrimage site for prayer and reflection. This religious center in Malabanan, Balete is popular among religious pilgrims as the place has vast open spaces reminiscent of European gardens. The Marian Orchard is a spiritual oasis that inspires renewal of faith for the Roman Catholics. Under the FAITH Colleges management, features of the pilgrim park have been upgraded. </p>
+		</div>
+      </div>
+
+      <!-- Batangas Lakelands -->
+      <div class="card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/a0/41/eb/batangas-lakelands-is.jpg?w=1200&h=-1&s=1" alt="Batangas Lakelands">
+        <div class="card-content">
+          <h3>Batangas Lakelands</h3>
+          <p>Batangas Lakelands features outdoor adventure, sports, leisure, and entertainment activities within its 20 hectares property. Some of the activities are archery, airsoft, leisure biking, walking trails, baluarte highlights hop-on hop-off tour, zipline, wall climbing and rappelling. It is a nature-inspired development that features outdoor adventure, sports, entertainment, and leisure activities inside a safe and secured environment.</p>
+        </div>
+      </div>
+
+      <!-- Cintai Corito's Garden -->
+      <div class="card">
+        <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhHOq2egvZWLowX0PsOeiKg7arxYVKYSI8E37WiHosxIwz31AAKflF3eCq0WmI8A_4A09Goj4rtGk64Y0Q-MDy4hOJ97rNUyGtt5mLjl0r7IPbUSt-L4onbVIsjNZK-o7G7FL0SI4PNVDoSs7Cprz3hOE16kzLGAZXyFO6m5sLW4Q8z2WCyk7WlS=w324-h312-n-k-no" alt="Cintai Corito's Garden">
+        <div class="card-content">
+          <h3>Cintai Corito's Garden</h3>
+          <p>Cintai Corito's Garden is a Balinese-inspired sanctuary tucked in the heart of Balete, Batangas. The resort is well-known for the Batangueños and tourists with 18 spacious villas. Enjoy a delectable meal with Asian and Filipino cuisine favorites. For weddings, birthdays, meetings, social functions, and photoshoots, the resort’s pavilions and garden areas provide the perfect backdrop to make momentous occasions memorable.</p>
+        </div>
+      </div>
+
+      <!-- Mozzafiato Balete View Deck -->
+      <div class="card">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxjx9iFTzHe8HwIOHsUA0V6QKcsv6s8nrHsHu54Yi79MQfUs6y8Mmob5wZXqc2aSrAmG9c5BSl7gF5s5AlHqWqkB5MQwUSwdp0Y32g9oItIULVunfBcQL6Nq_8PjHA8fg-WG7w=s680-w680-h510-rw" alt="Mozzafiato Balete View Deck">
+        <div class="card-content">
+          <h3>Mozzafiato Balete View Deck</h3>
+          <p>The "Balete View Deck" in Batangas generally refers to the scenic viewpoints in Balete, particularly the Balete Baywalk, which offers clear views of Taal Lake and Taal Volcano. Known for sunset views, cycling routes, and a relaxing atmosphere. Visitors can enjoy recreational activities like biking, family gatherings, and access public spaces with picnic tables.</p>
+        </div>
+      </div>
+
+      <!-- San Sebastian Baywalk, Balete -->
+      <div class="card">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxiIoy1DdTjKV5UnNE-EXnbIh-sI7X33nktPouebBimSCUxfsFXAq0owoVUM5menrJJgAvYABFITRPvF0rdPX-_dWHjJwhJ584yfl_daR20EKge72XnB-h3JAgTP3EH6HYgQy2e=s680-w680-h510-rw" alt="San Sebastian Baywalk, Balete">
+        <div class="card-content">
+          <h3>San Sebastian Baywalk, Balete</h3>
+          <p>The Balete Baywalk encompasses parts of Barangay Looc and Barangay San Sebastian. It has been a favorite destination among cyclists and motorists for its newly paved roads and panoramic views of Taal Lake. With Taal Volcano on the right and Mt. Maculot on the left, visitors can enjoy the stunning landscape of Balete.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Discover Balete | All Rights Reserved Follow us on Facebook & Instagram for updates</p>
+  </footer>
+
+</body>
+</html>
